@@ -1,0 +1,5 @@
+node_api/dist
+node_api/node_modules
+node_api/package-lock.json
+.idea
+.ds_store
