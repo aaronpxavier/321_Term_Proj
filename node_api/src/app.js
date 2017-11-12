@@ -45,12 +45,12 @@ app.use(parser.json());
 app.use(parser.urlencoded({extended: true}));
 
 // load api version routes (i.e. app.use('[version root route]',imported-version-routes))
-app.use('/',endpoints);
+app.use('/api',endpoints);
 
 // default api endpoint
 app.all('/',(req,res)=>{
     res.json({
-    msg: 'CURCA Research Opportunities API'
+    msg: 'root url works'
 });
 }); // end app.all(/)
 
