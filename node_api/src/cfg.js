@@ -4,10 +4,14 @@
 
 // Configuration Object -----------------------------------------------------//
 
+let port;
+
+process.env.PORT ? port = process.env.PORT : port = 8080;
+
 const config = {
-    port: 8080, // server port to listen on
+    port: port, // server port to listen on
     mode: 'dev',
-    db_host: 'mongodb://localhost/CURCAdb'
+    db_host: 'mongodb://localhost/321_TERM_PROJ_DB',
 }; // end config
 
 // Exports ------------------------------------------------------------------//

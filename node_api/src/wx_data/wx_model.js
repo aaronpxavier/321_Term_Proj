@@ -1,4 +1,4 @@
-import mongoose from '../mongoose/index';
+import mongoose from '../../node_modules/mongoose';
 const SCHEMA = mongoose.Schema;
 const WX_DATA_SCHEMA = new SCHEMA({
     temp: {type: Number},

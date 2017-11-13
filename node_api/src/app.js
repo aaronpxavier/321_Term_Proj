@@ -29,10 +29,10 @@ app.use(morgan(config.mode));
 // default status code
 app.use((req,res,next)=>{
     res.status(200);
-res.header('Access-Control-Allow-Origin','*');
-res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE,OPTIONS');
-res.header('Access-Control-Allow-Headers','Origin, X-Requested-With, Content-Type, Accept, Authorization');
-next(); // forward to next middleware call
+    res.header('Access-Control-Allow-Origin','*');
+    res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE,OPTIONS');
+    res.header('Access-Control-Allow-Headers','Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    next(); // forward to next middleware call
 }); // end app.use
 
 // for all options requests (pre-flight requests) the origin and method headers will be sent
