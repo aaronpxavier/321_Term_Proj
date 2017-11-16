@@ -4,9 +4,8 @@
   "description": "API for cse_321 term project",
   "scripts": {
     "625": "babel src -d ./dist --ignore *.spec.js",
-    "compress": "gulp js-min --folder ./dist",
     "build": "npm run 625",
-    "build-compress": "npm run 625 && npm run compress",
+    "deploy": "npm run build && gulp deploy && gulp deploy2",
     "start": "node ./dist/server.js",
     "test": "jest"
   },
@@ -33,6 +32,7 @@
     "gulp-filesize": "0.0.6",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-ssh": "^0.6.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "jest": "^21.2.1",
