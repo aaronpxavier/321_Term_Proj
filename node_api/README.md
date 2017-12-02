@@ -19,3 +19,6 @@ API backend for the 321 embedded systems project
 2. npm run build - Compiles JS files in the /src directory from ES6 to browser ready ES5 and writes them to /dist.
 3. npm run test - Uses Jest to run tests located in the /src/__tests__ directory.
 4. npm run start - Starts up the ExpressJS server (./dist/server.js) locally.
+5. npm run deploy - deploys es5 files in dist/ to remote server. must configure a remote_conn.json file first.
+
+

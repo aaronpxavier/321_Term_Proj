@@ -4,6 +4,8 @@
 
 // Imports ------------------------------------------------------------------//
 
+//var config = require('./cfg');
+
 import config from './cfg';
 import app from './app';
 

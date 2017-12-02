@@ -8,7 +8,7 @@ var remote_conn = JSON.parse(fs.readFileSync('remote_conn.json', 'utf8'));
 
 var config = {
     host: remote_conn.host,
-    port: 22,
+    port: remote_conn.port,
     username: remote_conn.user,
     password: remote_conn.pass
 };
